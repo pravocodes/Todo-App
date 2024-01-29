@@ -32,7 +32,7 @@ function App() {
 
   const router = createBrowserRouter(
     createRoutesFromElements(
-      <Route path="/Todo-react-App" element={<Layout/>}>
+      <Route path="Todo-react-App" element={<Layout/>}>
         <Route index element={<Home todos={todos} setTodos={setTodos} />} />
         <Route path="about" element={<About/>} />
         <Route path="contactus" element={<Contact/>} />
