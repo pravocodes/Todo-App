@@ -1,4 +1,4 @@
-import { useState } from 'react';
+import { useState } from 'react'
 import {
   createBrowserRouter,
   createRoutesFromElements,
@@ -32,7 +32,7 @@ function App() {
 
   const router = createBrowserRouter(
     createRoutesFromElements(
-      <Route path="/" element={<Layout/>}>
+      <Route path="/Todo-App" element={<Layout/>}>
         <Route index element={<Home todos={todos} setTodos={setTodos} />} />
         <Route path="about" element={<About/>} />
         <Route path="contactus" element={<Contact/>} />
@@ -42,10 +42,11 @@ function App() {
   );
 
   return (
-    <div>
+    <>
+      
       <RouterProvider router={router} />
-    </div>
-  );
+    </>
+  )
 }
 
-export default App;
+export default App
